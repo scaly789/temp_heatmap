@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Monthly Temperature of Hong Kong</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+      /* Define styles for the matrix cells */
+      .matrix-cell {
+        stroke: #fff;
+      }
+      /* Define styles for the x-axis ticks */
+      .x-axis text {
+        font-size: 10px;
+        text-anchor: middle;
+      }
+      /* Define styles for the y-axis ticks */
+      .y-axis text {
+        font-size: 10px;
+      }
+      /* Define styles for the title */
+      .title {
+        font-size: 20px;
+        font-weight: bold;
+        text-anchor: middle;
+      }
+      #tempChange {
+        margin-bottom: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="tempChange">Check the box for max temperature visualization and vice-versa</label>
+    <input type="checkbox" id="tempChange">
+    <br>
+    <p>Temperature Color Legend (Celsius):</p>
+    <div id="legend"></div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
